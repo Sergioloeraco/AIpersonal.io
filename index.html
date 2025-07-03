@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>IA Recomendadas para Programación</title>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #f5f5f5;
       padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
       line-height: 1.6;
     }
 
@@ -23,9 +24,9 @@
     }
 
     h2 {
+      font-size: 1.8em;
       color: #ffdd57;
       margin-top: 50px;
-      font-size: 1.8em;
       border-left: 5px solid #ffdd57;
       padding-left: 10px;
     }
@@ -36,18 +37,18 @@
     }
 
     li {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255,255,255,0.05);
       margin: 15px 0;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     li:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      background: rgba(255,255,255,0.08);
     }
 
     a {
@@ -63,45 +64,68 @@
       text-decoration: underline;
     }
 
-    @media (min-width: 768px) {
-      body {
-        max-width: 800px;
-        margin: auto;
-      }
+    .store-link {
+      display: block;
+      font-size: 0.9em;
+      margin-top: 5px;
+      color: #aaa;
+    }
+
+    .store-link:hover {
+      color: #ffd700;
     }
   </style>
-
 </head>
 <body>
   <h1>IA Recomendadas para Programación y Documentación</h1>
 
   <h2>🧠 Generación, Edición de Documentos y Diagramas</h2>
   <ul>
-    <li><a href="https://chat.openai.com/" target="_blank">ChatGPT (OpenAI)</a> – Asistente todo en uno para documentación, código y más.</li>
-    <li><a href="https://gemini.google.com/" target="_blank">Google Gemini</a> – IA integrada con Google Docs y Drive.</li>
-    <li><a href="https://www.notion.so/product/ai" target="_blank">Notion AI</a> – Excelente para generar wikis, notas y documentación técnica.</li>
-    <li><a href="https://www.mintlify.com/" target="_blank">Mintlify</a> – Documentación automática a partir del código.</li>
+    <li>
+      <a href="https://chat.openai.com/" target="_blank">ChatGPT (OpenAI)</a> – Todo en uno para código y documentación.
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://gemini.google.com/" target="_blank">Google Gemini</a> – IA integrada con Google Docs y búsqueda.
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://ai.google.dev/gemini-api/docs" target="_blank">Google Gemini for Developers</a> – API y herramientas para programadores.
+    </li>
+    <li>
+      <a href="https://www.notion.so/product/ai" target="_blank">Notion AI</a> – Perfecto para wikis, documentación técnica y notas.
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=notion.id" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://www.mintlify.com/" target="_blank">Mintlify</a> – Documentación automática a partir del código.
+    </li>
   </ul>
 
   <h2>🛠️ IA para Programación</h2>
   <ul>
-    <li><a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a> – Autocompletado, commits, explicación de código.</li>
-    <li><a href="https://www.tabnine.com/" target="_blank">Tabnine</a> – IA privada para autocompletar código en local.</li>
-    <li><a href="https://www.codeium.com/" target="_blank">Windsurf (codeium)</a> – IA gratuita para múltiples lenguajes.</li>
-    <li><a href="https://www.replit.com/" target="_blank">Replit Ghostwriter</a> – Codificación asistida desde el navegador.</li>
-    <li><a href="https://www.cursor.sh/" target="_blank">Cursor</a> – Editor de código con GPT integrado y búsqueda semántica.</li>
-    <li><a href="https://www.codium.ai/" target="_blank">CodiumAI</a> – Generador de pruebas unitarias automatizadas.</li>
-    <li><a href="https://aws.amazon.com/codewhisperer/" target="_blank">Amazon CodeWhisperer</a> – Autocompletado enfocado en entornos AWS.</li>
-    <li><a href="https://askthecode.ai/" target="_blank">AskTheCode</a> – IA para explorar y entender repositorios de GitHub.</li>
-    <li><a href="https://deepseek.com/" target="_blank">DeepSeek AI</a> – Potente modelo enfocado en programación.</li>
-    <li><a href="https://blackbox.ai/" target="_blank">Blackbox AI</a> – IA de autocompletado multiplataforma con soporte para múltiples lenguajes.</li>
-    <li><a href="https://www.meta.ai/" target="_blank">Meta AI</a> – Modelos como LLaMA y Code LLaMA, útiles para proyectos personalizados.</li>
+    <li><a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a> – Autocompletado, explicación y generación de código.</li>
+    <li><a href="https://www.tabnine.com/" target="_blank">Tabnine</a> – IA local para autocompletar con privacidad.</li>
+    <li><a href="https://www.codeium.com/" target="_blank">Windsurf (Codeium)</a> – Gratis y compatible con múltiples lenguajes.</li>
+    <li>
+      <a href="https://www.replit.com/" target="_blank">Replit Ghostwriter</a> – IDE en línea con asistencia inteligente.
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li><a href="https://www.cursor.sh/" target="_blank">Cursor</a> – Editor con GPT integrado y búsqueda semántica.</li>
+    <li><a href="https://www.codium.ai/" target="_blank">CodiumAI</a> – Generación de pruebas unitarias.</li>
+    <li><a href="https://aws.amazon.com/codewhisperer/" target="_blank">Amazon CodeWhisperer</a> – IA enfocada en AWS y autocompletado.</li>
+    <li><a href="https://askthecode.ai/" target="_blank">AskTheCode</a> – Explora y entiende repositorios de GitHub con IA.</li>
+    <li><a href="https://deepseek.com/" target="_blank">DeepSeek AI</a> – Modelo potente enfocado en código.</li>
+    <li><a href="https://blackbox.ai/" target="_blank">Blackbox AI</a> – IA multiplataforma para completar código.</li>
+    <li><a href="https://www.meta.ai/" target="_blank">Meta AI</a> – Incluye Code LLaMA para proyectos avanzados.</li>
   </ul>
 
   <h2>📋 Ayuda y Soporte para Grandes Proyectos</h2>
   <ul>
-    <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a> – Análisis de código, debugging y generación de pruebas.</li>
-    <li><a href="https://www.anthropic.com/index/claude" target="_blank">Claude 3</a> – Lee grandes cantidades de código y documentación técnica.</li>
+    <li>
+      <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> – Análisis, debugging, tests y generación de documentación.
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li><a href="https://www.anthropic.com/index/claude" target="_blank">Claude 3</a> – Ideal para leer grandes volúmenes de código.</li>
   </ul>
 </body>
 </html>
