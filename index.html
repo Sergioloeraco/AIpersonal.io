@@ -8,40 +8,40 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://icon-library.com/images/artificial-intelligence-icon/artificial-intelligence-icon-2.jpg">
   <style>
-    /* Importamos una fuente que evoca el estilo Darkwave/retro-futurista */
+    /* Importamos las fuentes una sola vez al inicio */
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap');
 
     body {
-      font-family: 'Roboto Mono', monospace; /* Fuente más técnica, tipo consola */
-      background: linear-gradient(160deg, #0a0a0a, #1a1a1e); /* Degradado súper oscuro, casi negro */
-      color: #b0b0b0; /* Gris más claro para el texto general, sutil */
+      font-family: 'Roboto Mono', monospace;
+      background: linear-gradient(160deg, #0a0a0a, #1a1a1e);
+      color: #b0b0b0;
       padding: 40px 20px;
-      max-width: 1000px; /* Un poco más ancho para una sensación de espacio */
+      max-width: 1000px;
       margin: auto;
-      line-height: 1.7; /* Mayor interlineado para legibilidad en oscuro */
-      box-shadow: inset 0 0 50px rgba(0, 255, 255, 0.05); /* Sutil brillo interior, como de pantalla antigua */
+      line-height: 1.7;
+      box-shadow: inset 0 0 50px rgba(0, 255, 255, 0.05);
     }
 
     h1 {
-      font-family: 'Orbitron', sans-serif; /* Fuente más futurista para el título */
-      font-size: 3.5em; /* Título principal más impactante */
-      color: #00ffff; /* Cian neón vibrante */
-      text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 25px rgba(0, 255, 255, 0.4); /* Sombra neón intensa */
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5em;
+      color: #00ffff;
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 25px rgba(0, 255, 255, 0.4);
       margin-bottom: 30px;
       text-align: center;
-      letter-spacing: 3px; /* Espaciado entre letras para un efecto "digital" */
-      text-transform: uppercase; /* Mayúsculas para un impacto fuerte */
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
 
     h2 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 2.2em; /* Subtítulos un poco más grandes */
-      color: #9933ff; /* Púrpura neón, contraste con el cian */
+      font-size: 2.2em;
+      color: #9933ff;
       margin-top: 70px;
-      border-left: 8px solid #00ffcc; /* Borde izquierdo con un verde/azul brillante */
+      border-left: 8px solid #00ffcc;
       padding-left: 20px;
       margin-bottom: 35px;
-      text-shadow: 0 0 10px rgba(153, 51, 255, 0.5); /* Sombra púrpura para los subtítulos */
+      text-shadow: 0 0 10px rgba(153, 51, 255, 0.5);
     }
 
     ul {
@@ -50,41 +50,41 @@
     }
 
     li {
-      background: rgba(10, 10, 10, 0.6); /* Fondo de cada elemento muy oscuro y semitransparente */
-      backdrop-filter: blur(5px); /* Efecto de desenfoque para dar profundidad */
+      background: rgba(10, 10, 10, 0.6);
+      backdrop-filter: blur(5px);
       margin: 25px 0;
       padding: 30px;
-      border-radius: 12px; /* Bordes un poco más definidos */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 255, 255, 0.08); /* Sombra exterior y brillo interior */
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 255, 255, 0.08);
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
-      border: 1px solid rgba(0, 255, 255, 0.2); /* Borde sutil cian */
+      border: 1px solid rgba(0, 255, 255, 0.2);
     }
 
     li:hover {
-      transform: translateY(-10px) scale(1.02); /* Efecto de elevación y ligero crecimiento */
-      box-shadow: 0 15px 30px rgba(0, 255, 255, 0.25), inset 0 0 20px rgba(0, 255, 255, 0.15); /* Sombra y brillo más intensos al pasar el ratón */
-      background: rgba(15, 15, 15, 0.7); /* Fondo ligeramente más oscuro al pasar el ratón */
-      border-color: #00ffff; /* Borde se ilumina a cian neón */
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(0, 255, 255, 0.25), inset 0 0 20px rgba(0, 255, 255, 0.15);
+      background: rgba(15, 15, 15, 0.7);
+      border-color: #00ffff;
     }
 
     a {
       text-decoration: none;
-      color: #00ccff; /* Azul cian para los enlaces */
+      color: #00ccff;
       font-weight: 700;
       font-size: 1.2em;
       transition: color 0.2s ease, text-shadow 0.2s ease;
-      text-transform: uppercase; /* Enlaces en mayúsculas para más impacto */
+      text-transform: uppercase;
     }
 
     a:hover {
-      color: #9933ff; /* Púrpura neón al pasar el ratón */
-      text-decoration: none; /* Quitamos el subrayado para un look más limpio */
-      text-shadow: 0 0 8px rgba(153, 51, 255, 0.8); /* Sombra neón al pasar el ratón */
+      color: #9933ff;
+      text-decoration: none;
+      text-shadow: 0 0 8px rgba(153, 51, 255, 0.8);
     }
 
     .description {
       font-size: 1em;
-      color: #808080; /* Gris más oscuro para las descripciones */
+      color: #808080;
       margin-top: 10px;
       display: block;
       line-height: 1.5;
@@ -94,13 +94,13 @@
       display: block;
       font-size: 0.9em;
       margin-top: 15px;
-      color: #0099ff; /* Azul más apagado para enlaces de tienda */
+      color: #0099ff;
       font-weight: 500;
       letter-spacing: 1px;
     }
 
     .store-link:hover {
-      color: #66ccff; /* Azul más claro al pasar el ratón */
+      color: #66ccff;
       text-decoration: underline;
     }
 
@@ -109,30 +109,107 @@
     /* ============================================== */
 
     #favorites-list li {
-      border-left: 5px solid #00ffcc; /* Borde izquierdo verde/cian brillante */
-      background: rgba(20, 20, 20, 0.7); /* Fondo un poco más oscuro para destacar */
-      box-shadow: 0 10px 25px rgba(0, 255, 204, 0.2), inset 0 0 20px rgba(0, 255, 204, 0.1); /* Sombra y brillo con el color del borde */
+      border-left: 5px solid #00ffcc;
+      background: rgba(20, 20, 20, 0.7);
+      box-shadow: 0 10px 25px rgba(0, 255, 204, 0.2), inset 0 0 20px rgba(0, 255, 204, 0.1);
     }
 
     #favorites-list li:hover {
       box-shadow: 0 15px 35px rgba(0, 255, 204, 0.4), inset 0 0 25px rgba(0, 255, 204, 0.2);
-      border-left-color: #00ffff; /* El borde se ilumina más a cian puro */
+      border-left-color: #00ffff;
     }
 
     #favorites-list .description {
-      color: #c0c0c0; /* Un gris más claro para la descripción de favoritos */
+      color: #c0c0c0;
       font-style: italic;
-      text-shadow: 0 0 5px rgba(0, 255, 204, 0.2); /* Sombra sutil para el texto */
+      text-shadow: 0 0 5px rgba(0, 255, 204, 0.2);
     }
 
     .ia-logo {
-      width: 28px; /* Un poco más grande */
+      width: 28px;
       height: 28px;
       vertical-align: middle;
       margin-right: 10px;
       border-radius: 6px;
       object-fit: contain;
-      box-shadow: 0 0 8px rgba(0, 255, 255, 0.4); /* Sutil brillo neón alrededor del logo */
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+    }
+
+    /* ============================================== */
+    /* ===== MEDIA QUERIES PARA RESPONSIVIDAD ===== */
+    /* ============================================== */
+
+    /* Pantallas más pequeñas (hasta 768px - tablets y móviles grandes) */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 15px; /* Menos padding lateral */
+      }
+
+      h1 {
+        font-size: 2.8em; /* Título un poco más pequeño */
+        letter-spacing: 2px; /* Menos espaciado para mejor ajuste */
+      }
+
+      h2 {
+        font-size: 1.8em; /* Subtítulos más pequeños */
+        margin-top: 50px;
+        padding-left: 15px; /* Reducir padding */
+        border-left: 6px solid #00ffcc; /* Borde un poco más delgado */
+      }
+
+      li {
+        padding: 20px; /* Menos padding en los elementos de lista */
+        margin: 20px 0; /* Ajustar margen */
+      }
+
+      a {
+        font-size: 1.1em; /* Enlaces ligeramente más pequeños */
+      }
+
+      .description {
+        font-size: 0.9em; /* Descripción más pequeña */
+      }
+    }
+
+    /* Pantallas muy pequeñas (hasta 480px - móviles) */
+    @media (max-width: 480px) {
+      body {
+        padding: 15px 10px; /* Padding mínimo */
+        line-height: 1.6; /* Ajustar interlineado */
+      }
+
+      h1 {
+        font-size: 2.2em; /* Título aún más pequeño */
+        letter-spacing: 1px;
+        word-break: break-word; /* Romper palabras largas si es necesario */
+      }
+
+      h2 {
+        font-size: 1.6em; /* Subtítulos más pequeños */
+        margin-top: 40px;
+        padding-left: 10px;
+        border-left: 4px solid #00ffcc; /* Borde aún más delgado */
+      }
+
+      li {
+        padding: 15px; /* Padding muy reducido para elementos de lista */
+        margin: 15px 0;
+        border-radius: 8px; /* Bordes un poco más suaves */
+      }
+
+      a {
+        font-size: 1em; /* Tamaño base para enlaces */
+      }
+
+      .description {
+        font-size: 0.85em; /* Descripción más compacta */
+      }
+
+      .ia-logo {
+        width: 20px; /* Logo más pequeño en móviles */
+        height: 20px;
+        margin-right: 5px;
+      }
     }
   </style>
 </head>
@@ -141,238 +218,238 @@
 
   <h2>🏆 Mis Favoritas (Las más usadas)</h2>
   <ul id="favorites-list">
-    <li>
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Copilot Logo" class="ia-logo">
-      <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
-      <p class="description">Indispensable para la productividad diaria. Acelera la escritura de código repetitivo y sugiere soluciones complejas de forma sorprendentemente precisa.</p>
-    </li>
-    <li>
-      <img src="https://freebiehive.com/wp-content/uploads/2023/02/ChatGPT-Logo-PNG-1.jpg" alt="OpenAI Logo" class="ia-logo">
-      <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT (OpenAI)</a>
-      <p class="description">Mi principal herramienta para depurar, refactorizar, explicar conceptos complejos y generar código desde cero a partir de una idea.</p>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank" rel="noopener noreferrer">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="ia-logo">
-      <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer">Google AI Studio</a>
-      <p class="description">Plataforma para desarrolladores para prototipar y crear aplicaciones utilizando los modelos Gemini. Ideal para experimentar con la API y construir soluciones personalizadas.</p>
-    </li>
-    <li>
-      <img src="https://avatars.githubusercontent.com/u/110732033?s=200&v=4" alt="Claude Logo" class="ia-logo">
-      <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude (Anthropic)</a>
-      <p class="description">Mi arma secreta para entender código complejo. Lo uso para que me explique repositorios enteros o resuma documentación técnica muy larga. Su capacidad para manejar grandes volúmenes de texto es inigualable.</p>
-    </li>
-    <li>
-      <img src="https://exafunction.github.io/public/brand/windsurf-white-symbol.png" alt="Windsurf Logo" class="ia-logo">
-      <a href="https://www.codeium.com/" target="_blank">Windsurf (Codeium)</a>
-      <span class="description">Autocompletado, generación y chat con IA en tu IDE, gratuito y compatible.</span>
-    </li>
-    <li>
-      <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="Amazon Q Logo" class="ia-logo">
-      <a href="https://aws.amazon.com/codewhisperer/" target="_blank">Amazon Q Developer</a>
-      <span class="description">Sugerencias de código en tiempo real basadas en comentarios y código existente.</span>
-    </li>
-    <li>
-      <img src="https://replit.com/public/icons/favicon-prompt-192.png" alt="Replit Logo" class="ia-logo">
-      <a href="https://replit.com/ai" target="_blank">Replit AI (Ghostwriter)</a>
-      <span class="description">Asistencia de IA integrada en el IDE en línea de Replit para prototipado rápido.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <img src="https://www.tabnine.com/favicon.ico" alt="Tabnine Logo" class="ia-logo">
-      <a href="https://www.tabnine.com/" target="_blank">Tabnine</a>
-      <span class="description">Autocompletado inteligente que aprende de tu código para predecir y sugerir.</span>
-    </li>
-    <li>
-      <img src="https://www.cursor.sh/favicon.ico" alt="Cursor Logo" class="ia-logo">
-      <a href="https://www.cursor.sh/" target="_blank">Cursor</a>
-      <span class="description">Editor de código con GPT integrado y búsqueda semántica para navegación rápida.</span>
-    </li>
-    <li>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="ia-logo">
-      <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>
-      <span class="description">Potente modelo de lenguaje para generación de código, explicaciones y más.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <img src="https://www.notion.so/images/favicon.ico" alt="Notion Logo" class="ia-logo">
-      <a href="https://www.notion.so/product/ai" target="_blank">Notion AI</a>
-      <span class="description">Ideal para wikis, documentación técnica y notas de proyectos.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=notion.id" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <img src="https://conserto.pro/wp-content/uploads/2022/11/microsoftteams-image-56.png" alt="OpenAI Logo" class="ia-logo">
-      <a href="https://openai.com/blog/openai-codex" target="_blank">OpenAI Codex</a>
-      <span class="description">El modelo detrás de muchas IA, capaz de traducir lenguaje natural a código.</span>
-    </li>
+      <li>
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Copilot Logo" class="ia-logo">
+          <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
+          <p class="description">Indispensable para la productividad diaria. Acelera la escritura de código repetitivo y sugiere soluciones complejas de forma sorprendentemente precisa.</p>
+      </li>
+      <li>
+          <img src="https://freebiehive.com/wp-content/uploads/2023/02/ChatGPT-Logo-PNG-1.jpg" alt="OpenAI Logo" class="ia-logo">
+          <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT (OpenAI)</a>
+          <p class="description">Mi principal herramienta para depurar, refactorizar, explicar conceptos complejos y generar código desde cero a partir de una idea.</p>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank" rel="noopener noreferrer">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="ia-logo">
+          <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer">Google AI Studio</a>
+          <p class="description">Plataforma para desarrolladores para prototipar y crear aplicaciones utilizando los modelos Gemini. Ideal para experimentar con la API y construir soluciones personalizadas.</p>
+      </li>
+      <li>
+          <img src="https://avatars.githubusercontent.com/u/110732033?s=200&v=4" alt="Claude Logo" class="ia-logo">
+          <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude (Anthropic)</a>
+          <p class="description">Mi arma secreta para entender código complejo. Lo uso para que me explique repositorios enteros o resuma documentación técnica muy larga. Su capacidad para manejar grandes volúmenes de texto es inigualable.</p>
+      </li>
+      <li>
+          <img src="https://exafunction.github.io/public/brand/windsurf-white-symbol.png" alt="Windsurf Logo" class="ia-logo">
+          <a href="https://www.codeium.com/" target="_blank">Windsurf (Codeium)</a>
+          <span class="description">Autocompletado, generación y chat con IA en tu IDE, gratuito y compatible.</span>
+      </li>
+      <li>
+          <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="Amazon Q Logo" class="ia-logo">
+          <a href="https://aws.amazon.com/codewhisperer/" target="_blank">Amazon Q Developer</a>
+          <span class="description">Sugerencias de código en tiempo real basadas en comentarios y código existente.</span>
+      </li>
+      <li>
+          <img src="https://replit.com/public/icons/favicon-prompt-192.png" alt="Replit Logo" class="ia-logo">
+          <a href="https://replit.com/ai" target="_blank">Replit AI (Ghostwriter)</a>
+          <span class="description">Asistencia de IA integrada en el IDE en línea de Replit para prototipado rápido.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <img src="https://www.tabnine.com/favicon.ico" alt="Tabnine Logo" class="ia-logo">
+          <a href="https://www.tabnine.com/" target="_blank">Tabnine</a>
+          <span class="description">Autocompletado inteligente que aprende de tu código para predecir y sugerir.</span>
+      </li>
+      <li>
+          <img src="https://www.cursor.sh/favicon.ico" alt="Cursor Logo" class="ia-logo">
+          <a href="https://www.cursor.sh/" target="_blank">Cursor</a>
+          <span class="description">Editor de código con GPT integrado y búsqueda semántica para navegación rápida.</span>
+      </li>
+      <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="ia-logo">
+          <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>
+          <span class="description">Potente modelo de lenguaje para generación de código, explicaciones y más.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <img src="https://www.notion.so/images/favicon.ico" alt="Notion Logo" class="ia-logo">
+          <a href="https://www.notion.so/product/ai" target="_blank">Notion AI</a>
+          <span class="description">Ideal para wikis, documentación técnica y notas de proyectos.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=notion.id" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <img src="https://conserto.pro/wp-content/uploads/2022/11/microsoftteams-image-56.png" alt="OpenAI Logo" class="ia-logo">
+          <a href="https://openai.com/blog/openai-codex" target="_blank">OpenAI Codex</a>
+          <span class="description">El modelo detrás de muchas IA, capaz de traducir lenguaje natural a código.</span>
+      </li>
   </ul>
 
   <h2>🌐 Chatbots Web / IDEs Online con IA</h2>
   <ul>
-    <li>
-      <img src="https://freebiehive.com/wp-content/uploads/2023/02/ChatGPT-Logo-PNG-1.jpg" alt="OpenAI Logo" class="ia-logo">
-      <a href="https://chat.openai.com/" target="_blank">ChatGPT (OpenAI)</a>
-      <span class="description">Acceso vía web con capacidades de generación, explicación y depuración de código en múltiples lenguajes.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="ia-logo">
-      <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>
-      <span class="description">Chatbot web multilingüe con capacidad para generar código, analizar errores y estructurar soluciones.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <img src="https://avatars.githubusercontent.com/u/110732033?s=200&v=4" alt="Claude Logo" class="ia-logo">
-      <a href="https://claude.ai/" target="_blank">Claude (Anthropic)</a>
-      <span class="description">Ideal para trabajar con grandes bloques de código, lectura de documentación y asistencia conversacional.</span>
-    </li>
-    <li>
-      <img src="https://replit.com/public/icons/favicon-prompt-192.png" alt="Replit Logo" class="ia-logo">
-      <a href="https://replit.com/" target="_blank">Replit</a>
-      <span class="description">IDE en línea con Ghostwriter integrado. Permite codificar, ejecutar y probar proyectos desde el navegador.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <img src="https://www.cursor.sh/favicon.ico" alt="Cursor Logo" class="ia-logo">
-      <a href="https://www.cursor.sh/" target="_blank">Cursor</a>
-      <span class="description">Editor de código en línea con GPT-4 integrado. Búsqueda semántica y chat lateral directamente en el código.</span>
-    </li>
-    <li>
-      <img src="https://images.seeklogo.com/logo-png/34/1/code-sandbox-logo-png_seeklogo-349463.png" alt="CodeSandbox Logo" class="ia-logo">
-      <a href="https://codesandbox.io/" target="_blank">CodeSandbox</a>
-      <span class="description">Entorno de desarrollo online con soporte para IA, ideal para compartir prototipos o colaboraciones rápidas.</span>
-    </li>
+      <li>
+          <img src="https://freebiehive.com/wp-content/uploads/2023/02/ChatGPT-Logo-PNG-1.jpg" alt="OpenAI Logo" class="ia-logo">
+          <a href="https://chat.openai.com/" target="_blank">ChatGPT (OpenAI)</a>
+          <span class="description">Acceso vía web con capacidades de generación, explicación y depuración de código en múltiples lenguajes.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="ia-logo">
+          <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>
+          <span class="description">Chatbot web multilingüe con capacidad para generar código, analizar errores y estructurar soluciones.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <img src="https://avatars.githubusercontent.com/u/110732033?s=200&v=4" alt="Claude Logo" class="ia-logo">
+          <a href="https://claude.ai/" target="_blank">Claude (Anthropic)</a>
+          <span class="description">Ideal para trabajar con grandes bloques de código, lectura de documentación y asistencia conversacional.</span>
+      </li>
+      <li>
+          <img src="https://replit.com/public/icons/favicon-prompt-192.png" alt="Replit Logo" class="ia-logo">
+          <a href="https://replit.com/" target="_blank">Replit</a>
+          <span class="description">IDE en línea con Ghostwriter integrado. Permite codificar, ejecutar y probar proyectos desde el navegador.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <img src="https://www.cursor.sh/favicon.ico" alt="Cursor Logo" class="ia-logo">
+          <a href="https://www.cursor.sh/" target="_blank">Cursor</a>
+          <span class="description">Editor de código en línea con GPT-4 integrado. Búsqueda semántica y chat lateral directamente en el código.</span>
+      </li>
+      <li>
+          <img src="https://images.seeklogo.com/logo-png/34/1/code-sandbox-logo-png_seeklogo-349463.png" alt="CodeSandbox Logo" class="ia-logo">
+          <a href="https://codesandbox.io/" target="_blank">CodeSandbox</a>
+          <span class="description">Entorno de desarrollo online con soporte para IA, ideal para compartir prototipos o colaboraciones rápidas.</span>
+      </li>
   </ul>
 
   <h2>💡 Autocompletado y Generación de Código</h2>
   <ul>
-    <li>
-      <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a>
-      <span class="description">El "programador de pares virtual" que sugiere líneas completas de código y funciones.</span>
-    </li>
-    <li>
-      <a href="https://www.tabnine.com/" target="_blank">Tabnine</a>
-      <span class="description">Autocompletado inteligente que aprende de tu código para predecir y sugerir.</span>
-    </li>
-    <li>
-      <a href="https://aws.amazon.com/codewhisperer/" target="_blank">Amazon Q Developer</a>
-      <span class="description">Sugerencias de código en tiempo real basadas en comentarios y código existente.</span>
-    </li>
-    <li>
-      <a href="https://openai.com/blog/openai-codex" target="_blank">OpenAI Codex</a>
-      <span class="description">El modelo detrás de muchas IA, capaz de traducir lenguaje natural a código.</span>
-    </li>
-    <li>
-      <a href="https://www.codeium.com/" target="_blank">Windsurf (Codeium)</a>
-      <span class="description">Autocompletado, generación y chat con IA en tu IDE, gratuito y compatible.</span>
-    </li>
-    <li>
-      <a href="https://replit.com/ai" target="_blank">Replit AI (Ghostwriter)</a>
-      <span class="description">Asistencia de IA integrada en el IDE en línea de Replit para prototipado rápido.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <a href="https://www.codium.ai/" target="_blank" rel="noopener noreferrer">CodiumAI</a>
-      <p class="description">Me ahorra horas de trabajo generando pruebas unitarias de alta calidad. Esencial para asegurar la fiabilidad del código que escribo.</p>
-    </li>
+      <li>
+          <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a>
+          <span class="description">El "programador de pares virtual" que sugiere líneas completas de código y funciones.</span>
+      </li>
+      <li>
+          <a href="https://www.tabnine.com/" target="_blank">Tabnine</a>
+          <span class="description">Autocompletado inteligente que aprende de tu código para predecir y sugerir.</span>
+      </li>
+      <li>
+          <a href="https://aws.amazon.com/codewhisperer/" target="_blank">Amazon Q Developer</a>
+          <span class="description">Sugerencias de código en tiempo real basadas en comentarios y código existente.</span>
+      </li>
+      <li>
+          <a href="https://openai.com/blog/openai-codex" target="_blank">OpenAI Codex</a>
+          <span class="description">El modelo detrás de muchas IA, capaz de traducir lenguaje natural a código.</span>
+      </li>
+      <li>
+          <a href="https://www.codeium.com/" target="_blank">Windsurf (Codeium)</a>
+          <span class="description">Autocompletado, generación y chat con IA en tu IDE, gratuito y compatible.</span>
+      </li>
+      <li>
+          <a href="https://replit.com/ai" target="_blank">Replit AI (Ghostwriter)</a>
+          <span class="description">Asistencia de IA integrada en el IDE en línea de Replit para prototipado rápido.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <a href="https://www.codium.ai/" target="_blank" rel="noopener noreferrer">CodiumAI</a>
+          <p class="description">Me ahorra horas de trabajo generando pruebas unitarias de alta calidad. Esencial para asegurar la fiabilidad del código que escribo.</p>
+      </li>
   </ul>
 
   <h2>🔍 Revisión, Mejora y Análisis de Código</h2>
   <ul>
-    <li>
-      <a href="https://deepsource.io/" target="_blank">DeepSource</a>
-      <span class="description">Análisis estático de código impulsado por IA para detectar errores y vulnerabilidades.</span>
-    </li>
-    <li>
-      <a href="https://aws.amazon.com/codeguru/" target="_blank">Amazon CodeGuru</a>
-      <span class="description">Optimiza el rendimiento del código y encuentra errores difíciles con aprendizaje automático.</span>
-    </li>
-    <li>
-      <a href="https://sourcery.ai/" target="_blank">Sourcery</a>
-      <span class="description">Automatiza tareas repetitivas y sugiere mejoras de calidad y legibilidad del código.</span>
-    </li>
-    <li>
-      <a href="https://sourcegraph.com/cody" target="_blank">Cody (Sourcegraph)</a>
-      <span class="description">Asistente de IA para grandes bases de código, revisiones de código y búsqueda semántica.</span>
-    </li>
-    <li>
-      <a href="https://zencoder.ai/" target="_blank">Zencoder</a>
-      <span class="description">Agente de codificación que analiza bases de código, repara código y genera documentación.</span>
-    </li>
-    <li>
-      <a href="https://codescene.com/" target="_blank">CodeScene</a>
-      <span class="description">Análisis de código basado en el comportamiento para mejorar la mantenibilidad a largo plazo.</span>
-    </li>
-    <li>
-      <a href="https://www.codium.ai/" target="_blank">CodiumAI</a>
-      <span class="description">Especializado en la generación de pruebas unitarias significativas.</span>
-    </li>
+      <li>
+          <a href="https://deepsource.io/" target="_blank">DeepSource</a>
+          <span class="description">Análisis estático de código impulsado por IA para detectar errores y vulnerabilidades.</span>
+      </li>
+      <li>
+          <a href="https://aws.amazon.com/codeguru/" target="_blank">Amazon CodeGuru</a>
+          <span class="description">Optimiza el rendimiento del código y encuentra errores difíciles con aprendizaje automático.</span>
+      </li>
+      <li>
+          <a href="https://sourcery.ai/" target="_blank">Sourcery</a>
+          <span class="description">Automatiza tareas repetitivas y sugiere mejoras de calidad y legibilidad del código.</span>
+      </li>
+      <li>
+          <a href="https://sourcegraph.com/cody" target="_blank">Cody (Sourcegraph)</a>
+          <span class="description">Asistente de IA para grandes bases de código, revisiones de código y búsqueda semántica.</span>
+      </li>
+      <li>
+          <a href="https://zencoder.ai/" target="_blank">Zencoder</a>
+          <span class="description">Agente de codificación que analiza bases de código, repara código y genera documentación.</span>
+      </li>
+      <li>
+          <a href="https://codescene.com/" target="_blank">CodeScene</a>
+          <span class="description">Análisis de código basado en el comportamiento para mejorar la mantenibilidad a largo plazo.</span>
+      </li>
+      <li>
+          <a href="https://www.codium.ai/" target="_blank">CodiumAI</a>
+          <span class="description">Especializado en la generación de pruebas unitarias significativas.</span>
+      </li>
   </ul>
 
   <h2>🔄 Refactorización de Código</h2>
   <ul>
-    <li>
-      <a href="https://marketplace.visualstudio.com/items?itemName=openrefactor.openrefactor-ai" target="_blank">OpenRefactor AI (Extensión VS Code)</a>
-      <span class="description">Permite refactorizar código seleccionado usando IA en cualquier lenguaje.</span>
-    </li>
-    <li>
-      <span class="description">Muchas herramientas de generación de código (como Copilot, Codeium) también sugieren y aplican refactorizaciones básicas.</span>
-    </li>
+      <li>
+          <a href="https://marketplace.visualstudio.com/items?itemName=openrefactor.openrefactor-ai" target="_blank">OpenRefactor AI (Extensión VS Code)</a>
+          <span class="description">Permite refactorizar código seleccionado usando IA en cualquier lenguaje.</span>
+      </li>
+      <li>
+          <span class="description">Muchas herramientas de generación de código (como Copilot, Codeium) también sugieren y aplican refactorizaciones básicas.</span>
+      </li>
   </ul>
 
   <h2>🗣️ Modelos de Lenguaje General (versátiles para Programadores)</h2>
   <ul>
-    <li>
-      <a href="https://chat.openai.com/" target="_blank">ChatGPT (OpenAI)</a>
-      <span class="description">Genera fragmentos de código, explica, depura y traduce código, y ayuda con el diseño.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>
-      <span class="description">Potente modelo de lenguaje para generación de código, explicaciones y más.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <a href="https://www.anthropic.com/index/claude" target="_blank">Claude (Anthropic)</a>
-      <span class="description">Excelente para leer y resumir grandes volúmenes de código y documentación.</span>
-    </li>
-    <li>
-      <a href="https://www.notion.so/product/ai" target="_blank">Notion AI</a>
-      <span class="description">Ideal para wikis, documentación técnica y notas de proyectos.</span>
-      <a class="store-link" href="https://play.google.com/store/apps/details?id=notion.id" target="_blank">📱 Disponible en Google Play</a>
-    </li>
-    <li>
-      <a href="https://www.mintlify.com/" target="_blank">Mintlify</a>
-      <span class="description">Automatiza la documentación a partir de tu código base.</span>
-    </li>
+      <li>
+          <a href="https://chat.openai.com/" target="_blank">ChatGPT (OpenAI)</a>
+          <span class="description">Genera fragmentos de código, explica, depura y traduce código, y ayuda con el diseño.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>
+          <span class="description">Potente modelo de lenguaje para generación de código, explicaciones y más.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <a href="https://www.anthropic.com/index/claude" target="_blank">Claude (Anthropic)</a>
+          <span class="description">Excelente para leer y resumir grandes volúmenes de código y documentación.</span>
+      </li>
+      <li>
+          <a href="https://www.notion.so/product/ai" target="_blank">Notion AI</a>
+          <span class="description">Ideal para wikis, documentación técnica y notas de proyectos.</span>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=notion.id" target="_blank">📱 Disponible en Google Play</a>
+      </li>
+      <li>
+          <a href="https://www.mintlify.com/" target="_blank">Mintlify</a>
+          <span class="description">Automatiza la documentación a partir de tu código base.</span>
+      </li>
   </ul>
 
   <h2>🌐 Otras Herramientas Útiles</h2>
   <ul>
-    <li>
-      <a href="https://askthecode.ai/" target="_blank">AskTheCode</a>
-      <span class="description">Explora y entiende repositorios de GitHub con IA, ideal para proyectos open source.</span>
-    </li>
-    <li>
-      <a href="https://deepseek.com/" target="_blank">DeepSeek AI</a>
-      <span class="description">Un modelo potente enfocado en tareas de codificación.</span>
-    </li>
-    <li>
-      <a href="https://blackbox.ai/" target="_blank">Blackbox AI</a>
-      <span class="description">IA multiplataforma para autocompletar y completar código.</span>
-    </li>
-    <li>
-      <a href="https://www.meta.ai/" target="_blank">Meta AI</a>
-      <span class="description">Incluye el modelo Code LLaMA, útil para proyectos de investigación y avanzados.</span>
-    </li>
-    <li>
-      <a href="https://www.cursor.sh/" target="_blank">Cursor</a>
-      <span class="description">Editor de código con GPT integrado y búsqueda semántica para navegación rápida.</span>
-    </li>
-    <li>
-      <a href="https://platform.openai.com/" target="_blank" rel="noopener noreferrer">OpenAI Platform</a>
-      <p class="description">Accede a los modelos de OpenAI (incluyendo GPT-4 y Codex) a través de su API para integrar la IA en tus propias aplicaciones y flujos de trabajo.</p>
-    </li>
+      <li>
+          <a href="https://askthecode.ai/" target="_blank">AskTheCode</a>
+          <span class="description">Explora y entiende repositorios de GitHub con IA, ideal para proyectos open source.</span>
+      </li>
+      <li>
+          <a href="https://deepseek.com/" target="_blank">DeepSeek AI</a>
+          <span class="description">Un modelo potente enfocado en tareas de codificación.</span>
+      </li>
+      <li>
+          <a href="https://blackbox.ai/" target="_blank">Blackbox AI</a>
+          <span class="description">IA multiplataforma para autocompletar y completar código.</span>
+      </li>
+      <li>
+          <a href="https://www.meta.ai/" target="_blank">Meta AI</a>
+          <span class="description">Incluye el modelo Code LLaMA, útil para proyectos de investigación y avanzados.</span>
+      </li>
+      <li>
+          <a href="https://www.cursor.sh/" target="_blank">Cursor</a>
+          <span class="description">Editor de código con GPT integrado y búsqueda semántica para navegación rápida.</span>
+      </li>
+      <li>
+          <a href="https://platform.openai.com/" target="_blank" rel="noopener noreferrer">OpenAI Platform</a>
+          <p class="description">Accede a los modelos de OpenAI (incluyendo GPT-4 y Codex) a través de su API para integrar la IA en tus propias aplicaciones y flujos de trabajo.</p>
+      </li>
   </ul>
 </body>
 </html>
