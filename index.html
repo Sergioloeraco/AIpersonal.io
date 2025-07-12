@@ -88,10 +88,126 @@
     .store-link:hover {
       color: #a0c2e3; /* Un azul más claro al pasar el ratón */
     }
+
+    .store-link:hover {
+      color: #a0c2e3; /* Un azul más claro al pasar el ratón */
+    }
+
+    /* ============================================== */
+    /* ===== ESTILOS PARA LA SECCIÓN DE FAVORITOS ===== */
+    /* ============================================== */
+
+    #favorites-list li {
+      /* Un borde izquierdo para que coincida con el estilo de los h2 y se destaque */
+      border-left: 4px solid #8bbdc7; 
+      
+      /* Un fondo ligeramente más claro para que resalten sobre el resto */
+      background: rgba(255, 255, 255, 0.1); 
+    }
+
+    /* Un efecto de sombra más pronunciado en el hover para darles importancia */
+    #favorites-list li:hover {
+      box-shadow: 0 10px 25px rgba(139, 189, 199, 0.3); /* Sombra con el color del título */
+      border-left-color: #9cdcfe; /* El borde se ilumina al pasar el ratón */
+    }
+
+    /* Hacemos la descripción en favoritos un poco más personal */
+    #favorites-list .description {
+      color: #d0d0d0; /* Un gris un poco más claro */
+      font-style: italic; /* Un toque personal con cursiva */
+    }
   </style>
 </head>
 <body>
   <h1>IA Recomendadas para Programación</h1>
+
+  <h2>🏆 Mis Favoritas (Las más usadas)</h2>
+  <ul id="favorites-list">
+    <!-- REEMPLAZA ESTOS EJEMPLOS CON TUS HERRAMIENTAS PREFERIDAS -->
+    <li>
+      <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
+      <p class="description">Indispensable para la productividad diaria. Acelera la escritura de código repetitivo y sugiere soluciones complejas de forma sorprendentemente precisa.</p>
+    </li>
+    <li>
+      <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT (OpenAI)</a>
+      <p class="description">Mi principal herramienta para depurar, refactorizar, explicar conceptos complejos y generar código desde cero a partir de una idea.</p>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank" rel="noopener noreferrer">📱 Disponible en Google Play</a>
+    </li>
+    
+    <li>
+      <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer">Google AI Studio</a>
+      <p class="description">Plataforma para desarrolladores para prototipar y crear aplicaciones utilizando los modelos Gemini. Ideal para experimentar con la API y construir soluciones personalizadas.</p>
+    </li>
+    <li>
+      <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude (Anthropic)</a>
+      <p class="description">Mi arma secreta para entender código complejo. Lo uso para que me explique repositorios enteros o resuma documentación técnica muy larga. Su capacidad para manejar grandes volúmenes de texto es inigualable.</p>
+    </li>
+    <li>
+      <a href="https://www.codeium.com/" target="_blank">Windsurf (Codeium)</a>
+      <span class="description">Autocompletado, generación y chat con IA en tu IDE, gratuito y compatible.</span>
+    </li>
+    <li>
+      <a href="https://aws.amazon.com/codewhisperer/" target="_blank">Amazon Q Developer</a>
+      <span class="description">Sugerencias de código en tiempo real basadas en comentarios y código existente.</span>
+    </li>
+    <li>
+      <a href="https://replit.com/ai" target="_blank">Replit AI (Ghostwriter)</a>
+      <span class="description">Asistencia de IA integrada en el IDE en línea de Replit para prototipado rápido.</span>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://www.tabnine.com/" target="_blank">Tabnine</a>
+      <span class="description">Autocompletado inteligente que aprende de tu código para predecir y sugerir.</span>
+    </li>
+    <li>
+      <a href="https://www.cursor.sh/" target="_blank">Cursor</a>
+      <span class="description">Editor de código con GPT integrado y búsqueda semántica para navegación rápida.</span>
+    </li>
+    <li>
+      <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>
+      <span class="description">Potente modelo de lenguaje para generación de código, explicaciones y más.</span>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://www.notion.so/product/ai" target="_blank">Notion AI</a>
+      <span class="description">Ideal para wikis, documentación técnica y notas de proyectos.</span>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=notion.id" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://openai.com/blog/openai-codex" target="_blank">OpenAI Codex</a>
+      <span class="description">El modelo detrás de muchas IA, capaz de traducir lenguaje natural a código.</span>
+    </li>
+  </ul>
+    <h2>🌐 Chatbots Web / IDEs Online con IA</h2>
+  <ul>
+    <li>
+      <a href="https://chat.openai.com/" target="_blank">ChatGPT (OpenAI)</a>
+      <span class="description">Acceso vía web con capacidades de generación, explicación y depuración de código en múltiples lenguajes.</span>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>
+      <span class="description">Chatbot web multilingüe con capacidad para generar código, analizar errores y estructurar soluciones.</span>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://claude.ai/" target="_blank">Claude (Anthropic)</a>
+      <span class="description">Ideal para trabajar con grandes bloques de código, lectura de documentación y asistencia conversacional.</span>
+    </li>
+    <li>
+      <a href="https://replit.com/" target="_blank">Replit</a>
+      <span class="description">IDE en línea con Ghostwriter integrado. Permite codificar, ejecutar y probar proyectos desde el navegador.</span>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://www.cursor.sh/" target="_blank">Cursor</a>
+      <span class="description">Editor de código en línea con GPT-4 integrado. Búsqueda semántica y chat lateral directamente en el código.</span>
+    </li>
+    <li>
+      <a href="https://codesandbox.io/" target="_blank">CodeSandbox</a>
+      <span class="description">Entorno de desarrollo online con soporte para IA, ideal para compartir prototipos o colaboraciones rápidas.</span>
+    </li>
+  </ul>
 
   <h2>💡 Autocompletado y Generación de Código</h2>
   <ul>
@@ -119,6 +235,10 @@
       <a href="https://replit.com/ai" target="_blank">Replit AI (Ghostwriter)</a>
       <span class="description">Asistencia de IA integrada en el IDE en línea de Replit para prototipado rápido.</span>
       <a class="store-link" href="https://play.google.com/store/apps/details?id=com.replit.app" target="_blank">📱 Disponible en Google Play</a>
+    </li>
+    <li>
+      <a href="https://www.codium.ai/" target="_blank" rel="noopener noreferrer">CodiumAI</a>
+      <p class="description">Me ahorra horas de trabajo generando pruebas unitarias de alta calidad. Esencial para asegurar la fiabilidad del código que escribo.</p>
     </li>
   </ul>
 
@@ -213,6 +333,10 @@
     <li>
       <a href="https://www.cursor.sh/" target="_blank">Cursor</a>
       <span class="description">Editor de código con GPT integrado y búsqueda semántica para navegación rápida.</span>
+    </li>
+    <li>
+      <a href="https://platform.openai.com/" target="_blank" rel="noopener noreferrer">OpenAI Platform</a>
+      <p class="description">Accede a los modelos de OpenAI (incluyendo GPT-4 y Codex) a través de su API para integrar la IA en tus propias aplicaciones y flujos de trabajo.</p>
     </li>
   </ul>
 </body>
