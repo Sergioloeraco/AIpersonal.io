@@ -6,34 +6,42 @@
   <title>IA Recomendadas para Programación</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://icon-library.com/images/artificial-intelligence-icon/artificial-intelligence-icon-2.jpg">
+  <link rel="icon" type="image/png" href="https://icon-library.com/images/artificial-intelligence-icon/artificial-intelligence-icon-2.jpg">
   <style>
+    /* Importamos una fuente que evoca el estilo Darkwave/retro-futurista */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap');
+
     body {
-      font-family: 'Inter', sans-serif;
-      /* Fondo degradado oscuro y elegante */
-      background: linear-gradient(135deg, #1a2a3a, #2a3d52);
-      color: #e0e0e0; /* Color de texto general más suave */
+      font-family: 'Roboto Mono', monospace; /* Fuente más técnica, tipo consola */
+      background: linear-gradient(160deg, #0a0a0a, #1a1a1e); /* Degradado súper oscuro, casi negro */
+      color: #b0b0b0; /* Gris más claro para el texto general, sutil */
       padding: 40px 20px;
-      max-width: 900px;
+      max-width: 1000px; /* Un poco más ancho para una sensación de espacio */
       margin: auto;
-      line-height: 1.6;
+      line-height: 1.7; /* Mayor interlineado para legibilidad en oscuro */
+      box-shadow: inset 0 0 50px rgba(0, 255, 255, 0.05); /* Sutil brillo interior, como de pantalla antigua */
     }
 
     h1 {
-      font-size: 2.8em; /* Un poco más grande para el título principal */
-      color: #8bbdc7; /* Azul/gris claro para el título */
-      text-shadow: 0 0 8px rgba(139, 189, 199, 0.4); /* Sombra más sutil */
-      margin-bottom: 25px;
-      text-align: center; /* Centrar el título */
+      font-family: 'Orbitron', sans-serif; /* Fuente más futurista para el título */
+      font-size: 3.5em; /* Título principal más impactante */
+      color: #00ffff; /* Cian neón vibrante */
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 25px rgba(0, 255, 255, 0.4); /* Sombra neón intensa */
+      margin-bottom: 30px;
+      text-align: center;
+      letter-spacing: 3px; /* Espaciado entre letras para un efecto "digital" */
+      text-transform: uppercase; /* Mayúsculas para un impacto fuerte */
     }
 
     h2 {
-      font-size: 2em; /* Un poco más grande para las secciones */
-      color: #9cdcfe; /* Azul claro para los subtítulos */
-      margin-top: 60px; /* Más espacio superior */
-      border-left: 6px solid #6a9ac9; /* Borde izquierdo más pronunciado y color azul oscuro */
-      padding-left: 15px;
-      margin-bottom: 30px; /* Espacio inferior para el subtítulo */
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.2em; /* Subtítulos un poco más grandes */
+      color: #9933ff; /* Púrpura neón, contraste con el cian */
+      margin-top: 70px;
+      border-left: 8px solid #00ffcc; /* Borde izquierdo con un verde/azul brillante */
+      padding-left: 20px;
+      margin-bottom: 35px;
+      text-shadow: 0 0 10px rgba(153, 51, 255, 0.5); /* Sombra púrpura para los subtítulos */
     }
 
     ul {
@@ -42,55 +50,58 @@
     }
 
     li {
-      background: rgba(255, 255, 255, 0.08); /* Fondo de cada elemento más visible pero discreto */
-      margin: 18px 0; /* Más espacio entre elementos */
-      padding: 25px; /* Más padding */
-      border-radius: 10px; /* Bordes ligeramente más suaves */
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada pero difuminada */
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-      border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+      background: rgba(10, 10, 10, 0.6); /* Fondo de cada elemento muy oscuro y semitransparente */
+      backdrop-filter: blur(5px); /* Efecto de desenfoque para dar profundidad */
+      margin: 25px 0;
+      padding: 30px;
+      border-radius: 12px; /* Bordes un poco más definidos */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 255, 255, 0.08); /* Sombra exterior y brillo interior */
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+      border: 1px solid rgba(0, 255, 255, 0.2); /* Borde sutil cian */
     }
 
     li:hover {
-      transform: translateY(-7px); /* Efecto de elevación más notorio */
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Sombra más oscura al pasar el ratón */
-      background: rgba(255, 255, 255, 0.12); /* Fondo ligeramente más claro al pasar el ratón */
+      transform: translateY(-10px) scale(1.02); /* Efecto de elevación y ligero crecimiento */
+      box-shadow: 0 15px 30px rgba(0, 255, 255, 0.25), inset 0 0 20px rgba(0, 255, 255, 0.15); /* Sombra y brillo más intensos al pasar el ratón */
+      background: rgba(15, 15, 15, 0.7); /* Fondo ligeramente más oscuro al pasar el ratón */
+      border-color: #00ffff; /* Borde se ilumina a cian neón */
     }
 
     a {
       text-decoration: none;
-      color: #8bbdc7; /* Un tono de azul más apagado para los enlaces */
-      font-weight: 600;
-      font-size: 1.1em; /* Un poco más grande para la legibilidad de los enlaces */
-      transition: color 0.2s ease;
+      color: #00ccff; /* Azul cian para los enlaces */
+      font-weight: 700;
+      font-size: 1.2em;
+      transition: color 0.2s ease, text-shadow 0.2s ease;
+      text-transform: uppercase; /* Enlaces en mayúsculas para más impacto */
     }
 
     a:hover {
-      color: #9cdcfe; /* Azul claro al pasar el ratón */
-      text-decoration: underline;
+      color: #9933ff; /* Púrpura neón al pasar el ratón */
+      text-decoration: none; /* Quitamos el subrayado para un look más limpio */
+      text-shadow: 0 0 8px rgba(153, 51, 255, 0.8); /* Sombra neón al pasar el ratón */
     }
 
     .description {
-      font-size: 0.95em; /* Tamaño de fuente ligeramente mayor para la descripción */
-      color: #b0b0b0; /* Gris más claro para la descripción */
-      margin-top: 8px; /* Más espacio superior */
+      font-size: 1em;
+      color: #808080; /* Gris más oscuro para las descripciones */
+      margin-top: 10px;
       display: block;
+      line-height: 1.5;
     }
 
     .store-link {
       display: block;
-      font-size: 0.8em; /* Ligeramente más pequeño */
-      margin-top: 10px; /* Más espacio */
-      color: #7a9cb5; /* Color más discreto para los enlaces de tienda */
+      font-size: 0.9em;
+      margin-top: 15px;
+      color: #0099ff; /* Azul más apagado para enlaces de tienda */
       font-weight: 500;
+      letter-spacing: 1px;
     }
 
     .store-link:hover {
-      color: #a0c2e3; /* Un azul más claro al pasar el ratón */
-    }
-
-    .store-link:hover {
-      color: #a0c2e3; /* Un azul más claro al pasar el ratón */
+      color: #66ccff; /* Azul más claro al pasar el ratón */
+      text-decoration: underline;
     }
 
     /* ============================================== */
@@ -98,34 +109,32 @@
     /* ============================================== */
 
     #favorites-list li {
-      /* Un borde izquierdo para que coincida con el estilo de los h2 y se destaque */
-      border-left: 4px solid #8bbdc7; 
-      
-      /* Un fondo ligeramente más claro para que resalten sobre el resto */
-      background: rgba(255, 255, 255, 0.1); 
+      border-left: 5px solid #00ffcc; /* Borde izquierdo verde/cian brillante */
+      background: rgba(20, 20, 20, 0.7); /* Fondo un poco más oscuro para destacar */
+      box-shadow: 0 10px 25px rgba(0, 255, 204, 0.2), inset 0 0 20px rgba(0, 255, 204, 0.1); /* Sombra y brillo con el color del borde */
     }
 
-    /* Un efecto de sombra más pronunciado en el hover para darles importancia */
     #favorites-list li:hover {
-      box-shadow: 0 10px 25px rgba(139, 189, 199, 0.3); /* Sombra con el color del título */
-      border-left-color: #9cdcfe; /* El borde se ilumina al pasar el ratón */
+      box-shadow: 0 15px 35px rgba(0, 255, 204, 0.4), inset 0 0 25px rgba(0, 255, 204, 0.2);
+      border-left-color: #00ffff; /* El borde se ilumina más a cian puro */
     }
 
-    /* Hacemos la descripción en favoritos un poco más personal */
     #favorites-list .description {
-      color: #d0d0d0; /* Un gris un poco más claro */
-      font-style: italic; /* Un toque personal con cursiva */
+      color: #c0c0c0; /* Un gris más claro para la descripción de favoritos */
+      font-style: italic;
+      text-shadow: 0 0 5px rgba(0, 255, 204, 0.2); /* Sombra sutil para el texto */
     }
-    
+
     .ia-logo {
-      width: 24px;
-      height: 24px;
+      width: 28px; /* Un poco más grande */
+      height: 28px;
       vertical-align: middle;
-      margin-right: 8px;
-      border-radius: 4px;
+      margin-right: 10px;
+      border-radius: 6px;
       object-fit: contain;
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.4); /* Sutil brillo neón alrededor del logo */
     }
-</style>
+  </style>
 </head>
 <body>
   <h1>IA Recomendadas para Programación</h1>
