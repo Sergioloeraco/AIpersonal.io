@@ -23,14 +23,15 @@
     }
 
     h1 {
-      font-family: 'Orbitron', sans-serif; /* Fuente más futurista para el título */
-      font-size: 3.5em; /* Título principal más impactante */
-      color: #00ffff; /* Cian neón vibrante */
-      text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 25px rgba(0, 255, 255, 0.4); /* Sombra neón intensa */
-      margin-bottom: 30px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2em; /* Más pequeño */
+      color: #00ffff;
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.4), 0 0 15px rgba(0, 255, 255, 0.2);
+      margin-bottom: 10px; /* Menos espacio abajo */
+      margin-top: 10px; /* Menos espacio arriba */
       text-align: center;
-      letter-spacing: 3px; /* Espaciado entre letras para un efecto "digital" */
-      text-transform: uppercase; /* Mayúsculas para un impacto fuerte */
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
     }
 
     h2 {
@@ -50,14 +51,14 @@
     }
 
     li {
-      background: rgba(10, 10, 10, 0.6); /* Fondo de cada elemento muy oscuro y semitransparente */
-      backdrop-filter: blur(5px); /* Efecto de desenfoque para dar profundidad */
-      margin: 25px 0;
-      padding: 30px;
-      border-radius: 12px; /* Bordes un poco más definidos */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 255, 255, 0.08); /* Sombra exterior y brillo interior */
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
-      border: 1px solid rgba(0, 255, 255, 0.2); /* Borde sutil cian */
+      background: rgba(10, 10, 10, 0.6);
+      backdrop-filter: blur(5px);
+      margin: 12px 0; /* Menos espacio entre bloques */
+      padding: 14px 12px; /* Mucho más compacto */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 8px rgba(0, 255, 255, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      border: 1px solid rgba(0, 255, 255, 0.15);
     }
 
     li:hover {
@@ -278,9 +279,11 @@
       }
 
       h1 {
-        font-size: 2.2em; /* Título aún más pequeño */
-        letter-spacing: 1px;
-        word-break: break-word; /* Romper palabras largas si es necesario */
+        font-size: 1.3em; /* Mucho más pequeño en móviles */
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+        margin-top: 6px;
+        word-break: break-word;
       }
 
       h2 {
@@ -291,9 +294,8 @@
       }
 
       li {
-        padding: 15px; /* Padding muy reducido para elementos de lista */
-        margin: 15px 0;
-        border-radius: 8px; /* Bordes un poco más suaves */
+        padding: 7px 4px; /* Ultra compacto en móvil */
+        margin: 4px 0;
       }
 
       a {
@@ -430,10 +432,13 @@
       <span></span>
     </div>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#favoritas" onclick="closeMenu()">Mis Favoritas</a></li>
+      <li><a href="#favoritas" onclick="closeMenu()">Favoritas</a></li>
       <li><a href="#chatbots" onclick="closeMenu()">Chatbots Web / IDEs Online</a></li>
-      <li><a href="#otras-herramientas" onclick="closeMenu()">Otras Herramientas</a></li>
-      <li><a href="#otras-ias" onclick="closeMenu()">Otras IAs útiles</a></li>
+      <li><a href="#otras-herramientas" onclick="closeMenu()">Autocompletado y Generación de Código</a></li>
+      <li><a href="#revisión-de-código" onclick="closeMenu()">Revisión, Mejora y Análisis de Código</a></li>
+      <li><a href="#refactorización-de-código" onclick="closeMenu()">Refactorización de Código</a></li>
+      <li><a href="#modelos-de-lenguaje" onclick="closeMenu()">Modelos de Lenguaje</a></li>
+      <li><a href="#otras-ias" onclick="closeMenu()">Otras Herramientas Útiles</a></li>
     </ul>
   </nav>
   <h1>IA Recomendadas para Programación</h1>
