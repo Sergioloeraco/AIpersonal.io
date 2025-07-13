@@ -310,12 +310,131 @@
         margin-right: 5px;
       }
     }
+    /* Menú hamburguesa */
+    .hamburger-nav {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1001;
+    }
+    .hamburger {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1002;
+    }
+    .hamburger span {
+      display: block;
+      width: 30px;
+      height: 4px;
+      margin: 4px 0;
+      background: #00ffff;
+      border-radius: 2px;
+      transition: all 0.3s cubic-bezier(.4,2,.6,1);
+      box-shadow: 0 0 8px #00ffff99;
+    }
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100vw;
+      width: 70vw;
+      max-width: 300px;
+      height: 100vh;
+      background: rgba(10,10,20,0.98);
+      box-shadow: -2px 0 24px #00ffff33;
+      list-style: none;
+      padding: 80px 30px 30px 30px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      transition: right 0.35s cubic-bezier(.4,2,.6,1);
+      z-index: 1000;
+    }
+    .nav-links.open {
+      right: 0;
+    }
+    .nav-links li {
+      margin: 0;
+    }
+    .nav-links a {
+      color: #00ffff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2em;
+      text-decoration: none;
+      letter-spacing: 1px;
+      text-shadow: 0 0 6px #00ffff88;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #9933ff;
+    }
+    @media (min-width: 900px) {
+      .hamburger-nav {
+        display: none;
+      }
+    }
+    body.menu-open {
+      overflow: hidden;
+    }
   </style>
+  <script>
+    // Menú hamburguesa interacción
+    function closeMenu() {
+      document.getElementById('nav-links').classList.remove('open');
+      document.getElementById('hamburger-btn').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    }
+    window.addEventListener('DOMContentLoaded', function() {
+      var btn = document.getElementById('hamburger-btn');
+      var nav = document.getElementById('nav-links');
+      btn.addEventListener('click', function() {
+        btn.classList.toggle('active');
+        nav.classList.toggle('open');
+        document.body.classList.toggle('menu-open', nav.classList.contains('open'));
+      });
+      // Cerrar menú al hacer click fuera
+      document.addEventListener('click', function(e) {
+        if (!btn.contains(e.target) && !nav.contains(e.target)) {
+          closeMenu();
+        }
+      });
+      // Cerrar menú al hacer scroll
+      window.addEventListener('scroll', closeMenu);
+    });
+  </script>
 </head>
 <body>
+  <!-- Menú hamburguesa -->
+  <nav class="hamburger-nav">
+    <div class="hamburger" id="hamburger-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#favoritas" onclick="closeMenu()">Mis Favoritas</a></li>
+      <li><a href="#chatbots" onclick="closeMenu()">Chatbots Web / IDEs Online</a></li>
+      <li><a href="#otras-herramientas" onclick="closeMenu()">Otras Herramientas</a></li>
+      <li><a href="#otras-ias" onclick="closeMenu()">Otras IAs útiles</a></li>
+    </ul>
+  </nav>
   <h1>IA Recomendadas para Programación</h1>
 
-  <h2>🏆 Mis Favoritas (Las más usadas)</h2>
+  <h2 id="favoritas">🏆 Mis Favoritas (Las más usadas)</h2>
   <ul id="favorites-list">
       <li>
           <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Copilot Logo" class="ia-logo">
@@ -383,7 +502,7 @@
       </li>
   </ul>
 
-  <h2>🌐 Chatbots Web / IDEs Online con IA</h2>
+  <h2 id="chatbots">🌐 Chatbots Web / IDEs Online con IA</h2>
   <ul>
       <li>
           <img src="https://freebiehive.com/wp-content/uploads/2023/02/ChatGPT-Logo-PNG-1.jpg" alt="OpenAI Logo" class="ia-logo">
@@ -420,7 +539,7 @@
       </li>
   </ul>
 
-  <h2>💡 Autocompletado y Generación de Código</h2>
+  <h2 id="otras-herramientas">💡 Autocompletado y Generación de Código</h2>
   <ul>
       <li>
           <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a>
@@ -453,7 +572,7 @@
       </li>
   </ul>
 
-  <h2>🔍 Revisión, Mejora y Análisis de Código</h2>
+  <h2 id="revisión-de-código">🔍 Revisión, Mejora y Análisis de Código</h2>
   <ul>
       <li>
           <a href="https://deepsource.io/" target="_blank">DeepSource</a>
@@ -485,7 +604,7 @@
       </li>
   </ul>
 
-  <h2>🔄 Refactorización de Código</h2>
+  <h2 id="refactorización-de-código">🔄 Refactorización de Código</h2>
   <ul>
       <li>
           <a href="https://marketplace.visualstudio.com/items?itemName=openrefactor.openrefactor-ai" target="_blank">OpenRefactor AI (Extensión VS Code)</a>
@@ -496,7 +615,7 @@
       </li>
   </ul>
 
-  <h2>🗣️ Modelos de Lenguaje General (versátiles para Programadores)</h2>
+  <h2 id="modelos-de-lenguaje">🗣️ Modelos de Lenguaje General (versátiles para Programadores)</h2>
   <ul>
       <li>
           <a href="https://chat.openai.com/" target="_blank">ChatGPT (OpenAI)</a>
@@ -523,7 +642,7 @@
       </li>
   </ul>
 
-  <h2>🌐 Otras Herramientas Útiles</h2>
+  <h2 id="otras-ias">🌐 Otras Herramientas Útiles</h2>
   <ul>
       <li>
           <a href="https://askthecode.ai/" target="_blank">AskTheCode</a>
