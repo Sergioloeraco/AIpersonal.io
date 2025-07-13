@@ -12,36 +12,36 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap');
 
     body {
-      font-family: 'Roboto Mono', monospace;
-      background: linear-gradient(160deg, #0a0a0a, #1a1a1e);
-      color: #b0b0b0;
+      font-family: 'Roboto Mono', monospace; /* Fuente más técnica, tipo consola */
+      background: linear-gradient(160deg, #0a0a0a, #1a1a1e); /* Degradado súper oscuro, casi negro */
+      color: #b0b0b0; /* Gris más claro para el texto general, sutil */
       padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      line-height: 1.7;
-      box-shadow: inset 0 0 50px rgba(0, 255, 255, 0.05);
+      max-width: 1000px; /* Default max-width for medium to large screens */
+      margin: auto; /* Centra el contenido en pantallas grandes */
+      line-height: 1.7; /* Mayor interlineado para legibilidad en oscuro */
+      box-shadow: inset 0 0 50px rgba(0, 255, 255, 0.05); /* Sutil brillo interior, como de pantalla antigua */
     }
 
     h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3.5em;
-      color: #00ffff;
-      text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 25px rgba(0, 255, 255, 0.4);
+      font-family: 'Orbitron', sans-serif; /* Fuente más futurista para el título */
+      font-size: 3.5em; /* Título principal más impactante */
+      color: #00ffff; /* Cian neón vibrante */
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 25px rgba(0, 255, 255, 0.4); /* Sombra neón intensa */
       margin-bottom: 30px;
       text-align: center;
-      letter-spacing: 3px;
-      text-transform: uppercase;
+      letter-spacing: 3px; /* Espaciado entre letras para un efecto "digital" */
+      text-transform: uppercase; /* Mayúsculas para un impacto fuerte */
     }
 
     h2 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 2.2em;
-      color: #9933ff;
+      font-size: 2.2em; /* Subtítulos un poco más grandes */
+      color: #9933ff; /* Púrpura neón, contraste con el cian */
       margin-top: 70px;
-      border-left: 8px solid #00ffcc;
+      border-left: 8px solid #00ffcc; /* Borde izquierdo con un verde/azul brillante */
       padding-left: 20px;
       margin-bottom: 35px;
-      text-shadow: 0 0 10px rgba(153, 51, 255, 0.5);
+      text-shadow: 0 0 10px rgba(153, 51, 255, 0.5); /* Sombra púrpura para los subtítulos */
     }
 
     ul {
@@ -50,41 +50,41 @@
     }
 
     li {
-      background: rgba(10, 10, 10, 0.6);
-      backdrop-filter: blur(5px);
+      background: rgba(10, 10, 10, 0.6); /* Fondo de cada elemento muy oscuro y semitransparente */
+      backdrop-filter: blur(5px); /* Efecto de desenfoque para dar profundidad */
       margin: 25px 0;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 255, 255, 0.08);
+      border-radius: 12px; /* Bordes un poco más definidos */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 255, 255, 0.08); /* Sombra exterior y brillo interior */
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
-      border: 1px solid rgba(0, 255, 255, 0.2);
+      border: 1px solid rgba(0, 255, 255, 0.2); /* Borde sutil cian */
     }
 
     li:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 15px 30px rgba(0, 255, 255, 0.25), inset 0 0 20px rgba(0, 255, 255, 0.15);
-      background: rgba(15, 15, 15, 0.7);
-      border-color: #00ffff;
+      transform: translateY(-10px) scale(1.02); /* Efecto de elevación y ligero crecimiento */
+      box-shadow: 0 15px 30px rgba(0, 255, 255, 0.25), inset 0 0 20px rgba(0, 255, 255, 0.15); /* Sombra y brillo más intensos al pasar el ratón */
+      background: rgba(15, 15, 15, 0.7); /* Fondo ligeramente más oscuro al pasar el ratón */
+      border-color: #00ffff; /* Borde se ilumina a cian neón */
     }
 
     a {
       text-decoration: none;
-      color: #00ccff;
+      color: #00ccff; /* Azul cian para los enlaces */
       font-weight: 700;
       font-size: 1.2em;
       transition: color 0.2s ease, text-shadow 0.2s ease;
-      text-transform: uppercase;
+      text-transform: uppercase; /* Enlaces en mayúsculas para más impacto */
     }
 
     a:hover {
-      color: #9933ff;
-      text-decoration: none;
-      text-shadow: 0 0 8px rgba(153, 51, 255, 0.8);
+      color: #9933ff; /* Púrpura neón al pasar el ratón */
+      text-decoration: none; /* Quitamos el subrayado para un look más limpio */
+      text-shadow: 0 0 8px rgba(153, 51, 255, 0.8); /* Sombra neón al pasar el ratón */
     }
 
     .description {
       font-size: 1em;
-      color: #808080;
+      color: #808080; /* Gris más oscuro para las descripciones */
       margin-top: 10px;
       display: block;
       line-height: 1.5;
@@ -94,13 +94,13 @@
       display: block;
       font-size: 0.9em;
       margin-top: 15px;
-      color: #0099ff;
+      color: #0099ff; /* Azul más apagado para enlaces de tienda */
       font-weight: 500;
       letter-spacing: 1px;
     }
 
     .store-link:hover {
-      color: #66ccff;
+      color: #66ccff; /* Azul más claro al pasar el ratón */
       text-decoration: underline;
     }
 
@@ -109,35 +109,134 @@
     /* ============================================== */
 
     #favorites-list li {
-      border-left: 5px solid #00ffcc;
-      background: rgba(20, 20, 20, 0.7);
-      box-shadow: 0 10px 25px rgba(0, 255, 204, 0.2), inset 0 0 20px rgba(0, 255, 204, 0.1);
+      border-left: 5px solid #00ffcc; /* Borde izquierdo verde/cian brillante */
+      background: rgba(20, 20, 20, 0.7); /* Fondo un poco más oscuro para destacar */
+      box-shadow: 0 10px 25px rgba(0, 255, 204, 0.2), inset 0 0 20px rgba(0, 255, 204, 0.1); /* Sombra y brillo con el color del borde */
     }
 
     #favorites-list li:hover {
       box-shadow: 0 15px 35px rgba(0, 255, 204, 0.4), inset 0 0 25px rgba(0, 255, 204, 0.2);
-      border-left-color: #00ffff;
+      border-left-color: #00ffff; /* El borde se ilumina más a cian puro */
     }
 
     #favorites-list .description {
-      color: #c0c0c0;
+      color: #c0c0c0; /* Un gris más claro para la descripción de favoritos */
       font-style: italic;
-      text-shadow: 0 0 5px rgba(0, 255, 204, 0.2);
+      text-shadow: 0 0 5px rgba(0, 255, 204, 0.2); /* Sombra sutil para el texto */
     }
 
     .ia-logo {
-      width: 28px;
+      width: 28px; /* Un poco más grande */
       height: 28px;
       vertical-align: middle;
       margin-right: 10px;
       border-radius: 6px;
       object-fit: contain;
-      box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.4); /* Sutil brillo neón alrededor del logo */
     }
 
     /* ============================================== */
     /* ===== MEDIA QUERIES PARA RESPONSIVIDAD ===== */
     /* ============================================== */
+
+    /* Pantallas grandes de escritorio (a partir de 1400px para pantallas muy amplias) */
+    @media (min-width: 1400px) {
+      body {
+        max-width: 1200px; /* Aumenta el ancho máximo para aprovechar pantallas muy grandes */
+        padding: 70px 50px; /* Más padding para un look más "espacioso" */
+      }
+
+      h1 {
+        font-size: 4.5em; /* Título aún más grande para un impacto máximo */
+        letter-spacing: 5px;
+      }
+
+      h2 {
+        font-size: 2.8em; /* Subtítulos más grandes */
+        margin-top: 90px;
+        padding-left: 30px;
+        border-left: 12px solid #00ffcc; /* Borde más grueso */
+      }
+
+      li {
+        padding: 45px; /* Más padding para los elementos de lista */
+        margin: 35px 0;
+      }
+
+      a {
+        font-size: 1.4em; /* Enlaces más grandes */
+      }
+
+      .description {
+        font-size: 1.15em; /* Descripciones más grandes */
+      }
+
+      .ia-logo {
+        width: 36px; /* Logos más grandes */
+        height: 36px;
+        margin-right: 15px;
+      }
+    }
+
+    /* Pantallas medianas a grandes (entre 1000px y 1399px) - Monitores estándar de PC y laptops grandes */
+    @media (min-width: 1000px) and (max-width: 1399px) {
+        body {
+            max-width: 960px; /* Mantiene el contenido centrado y legible sin estirarse demasiado */
+            padding: 50px 30px;
+        }
+        h1 {
+            font-size: 3.8em;
+            letter-spacing: 3.5px;
+        }
+        h2 {
+            font-size: 2.3em;
+            margin-top: 75px;
+            padding-left: 22px;
+            border-left: 9px solid #00ffcc;
+        }
+        li {
+            padding: 35px;
+            margin: 28px 0;
+        }
+        a {
+            font-size: 1.25em;
+        }
+        .description {
+            font-size: 1.05em;
+        }
+        .ia-logo {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    /* Pantallas de tablet y laptops pequeñas (hasta 999px y desde 769px) */
+    @media (max-width: 999px) and (min-width: 769px) {
+        body {
+            padding: 30px 25px;
+            max-width: 720px; /* Un poco más estrecho para tablets y laptops pequeñas */
+        }
+        h1 {
+            font-size: 3em;
+            letter-spacing: 2.5px;
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 60px;
+            padding-left: 18px;
+            border-left: 7px solid #00ffcc;
+        }
+        li {
+            padding: 25px;
+            margin: 22px 0;
+        }
+        a {
+            font-size: 1.1em;
+        }
+        .description {
+            font-size: 0.95em;
+        }
+    }
 
     /* Pantallas más pequeñas (hasta 768px - tablets y móviles grandes) */
     @media (max-width: 768px) {
