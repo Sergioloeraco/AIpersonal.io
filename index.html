@@ -382,11 +382,9 @@
     .nav-links a:hover {
       color: #9933ff;
     }
-    @media (min-width: 900px) {
-      .hamburger-nav {
-        display: none;
-      }
-    }
+    /* El menú hamburguesa ahora SIEMPRE está visible en todas las resoluciones */
+    /* Si tienes otro menú para escritorio, puedes ajustar aquí. */
+    /* .hamburger-nav { display: none; } */
     body.menu-open {
       overflow: hidden;
     }
@@ -414,6 +412,12 @@
       });
       // Cerrar menú al hacer scroll
       window.addEventListener('scroll', closeMenu);
+      // Cerrar menú al hacer click en cualquier enlace del menú
+      nav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          closeMenu();
+        });
+      });
     });
   </script>
 </head>
