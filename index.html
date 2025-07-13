@@ -416,6 +416,19 @@
       gap: 32px;
       transition: right 0.35s cubic-bezier(.4,2,.6,1);
       z-index: 1000;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #00ffff #181828;
+    }
+    .nav-links::-webkit-scrollbar {
+      width: 8px;
+    }
+    .nav-links::-webkit-scrollbar-thumb {
+      background: #00ffff;
+      border-radius: 6px;
+    }
+    .nav-links::-webkit-scrollbar-track {
+      background: #181828;
     }
     .nav-links.open {
       right: 0;
@@ -475,16 +488,7 @@
   </script>
 </head>
 <body>
-  <!-- Barra de navegación principal -->
-  <nav class="main-navbar">
-    <ul class="navbar-links">
-      <li><a href="#" class="navbar-link">Inicio</a></li>
-      <li><a href="#favorites-list" class="navbar-link">Favoritos</a></li>
-      <li><a href="#chatbots" class="navbar-link">Chatbots</a></li>
-      <li><a href="#analisis" class="navbar-link">Análisis</a></li>
-      <li><a href="#explora" class="navbar-link">Explora</a></li>
-    </ul>
-  </nav>
+
   <!-- Menú hamburguesa -->
   <nav class="hamburger-nav">
     <div class="hamburger" id="hamburger-btn">
@@ -493,13 +497,11 @@
       <span></span>
     </div>
     <ul class="nav-links" id="nav-links">
+      <li><a href="#" onclick="closeMenu()">Inicio</a></li>
       <li><a href="#favoritas" onclick="closeMenu()">Favoritas</a></li>
-      <li><a href="#chatbots" onclick="closeMenu()">Chatbots Web / IDEs Online</a></li>
-      <li><a href="#otras-herramientas" onclick="closeMenu()">Autocompletado y Generación de Código</a></li>
-      <li><a href="#revisión-de-código" onclick="closeMenu()">Revisión, Mejora y Análisis de Código</a></li>
-      <li><a href="#refactorización-de-código" onclick="closeMenu()">Refactorización de Código</a></li>
-      <li><a href="#modelos-de-lenguaje" onclick="closeMenu()">Modelos de Lenguaje</a></li>
-      <li><a href="#otras-ias" onclick="closeMenu()">Otras Herramientas Útiles</a></li>
+      <li><a href="#chatbots" onclick="closeMenu()">Chatbots</a></li>
+      <li><a href="#analisis" onclick="closeMenu()">Análisis</a></li>
+      <li><a href="#explora" onclick="closeMenu()">Explora</a></li>
     </ul>
   </nav>
   <h1>IA Recomendadas para Programación</h1>
